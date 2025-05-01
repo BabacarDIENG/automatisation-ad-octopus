@@ -1,0 +1,10 @@
+-ExecutionPolicy Bypass -File "\\sccm-04\Sources\Scripts\Creation de compte\CreationDeCompte.ps1" `
+  -prenom "[[@Incident.cfPrenomForTeam1]]" `
+  -nom "[[@Incident.cfNomForTeam1]]" `
+  -numeroEmp "[[@Incident.cfNumeroDEmployeEForTeam1]]" `
+  -departementDirection "[[@Incident.cfDepartement1ForTeam1]]" `
+  -fonction "[[@Incident.cfFonctionTexteForTeam1]]" `
+  -numeroIncident "[[@Incident.ID]]" `
+  -mailDemandeur "[[@Incident.Querent.EmailProfessional]]" `
+  -mailPersonelUtilisateur "[[@Incident.cfAdresseDeCourrielPersonnelleForTeam1]]" `
+  -sujetRequete "[[@Incident.BriefDescription]]"
